@@ -35,6 +35,4 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          build-args: |
-            GITHUB_ACCESS_TOKEN=${{ secrets.GITHUB_ACCESS_TOKEN }} 
+          labels: ${{ steps.meta.outputs.labels }} 
